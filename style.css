@@ -1,0 +1,137 @@
+body {
+	margin: 0; padding:0;
+    background: #eee;
+}
+span.error {
+	font-weight: bold;
+    color: #e22;
+}
+input, div.result {
+    display: block;
+    width: 100%;
+    font-size: 3.5vw;
+    text-align: center;
+    vertical-align: top;
+    font-family: Menlo, Monaco, Courier, monospace;
+    height: 100px;
+}
+div#selector {
+	background: #baa;
+    border-bottom: 4px solid #c2e1f5;
+    margin: 0; padding: 0;
+    margin-bottom: 32px;
+    text-align: left;
+    height: 50px;
+    padding-top: 25px;
+    padding-left: 33%;
+}
+
+input {
+	-webkit-box-sizing: border-box;
+    font-size: 4.5vw;
+	letter-spacing: 10vw;
+    text-align: center;
+    border: 1px solid #eee;
+    background: #666;
+    color: #eee;
+}
+
+select, button {
+	background: #666;
+    color: #eee;
+	font-size: 34px;
+    margin-top: -17px;
+    width: 6em;
+    border: 1px solid #eee;
+    text-align: center;
+}
+button {
+	float: right;
+    width: 3em;
+    border-radius: 6px;
+    margin-right: 1em;
+}
+
+div#words {
+    clear: both;
+}
+div.word {
+	-webkit-box-sizing: border-box;
+	width: 15.5vw;
+	display: none;
+	border: 4px solid #c2e1f5;
+    background: #aab;
+    border-radius: 12px;
+    padding: 5px;
+    float: left;
+    margin: 10px .5vw 16px .5vw;
+}
+
+div.result {
+	margin-top: 20px;
+    display: none;
+}
+
+div.definition {
+	font-size: .8em;
+}
+
+.arrow_box, .arrow {
+	-webkit-box-sizing: border-box;
+	position: relative;
+    left: 0;
+    width: 100%;
+    color: #ffd;
+    padding: 1em .3em;
+    margin-top: 16px;
+    text-align: center;
+	background: #c55;
+	border: 4px solid #c2e1f5;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-radius: 12px;
+    margin-bottom: -100px;
+}
+.arrow {
+	width: 20px;
+    height: 10px;
+    padding: 0;
+    border: 0;
+    background: #c2e1f5;
+    border-radius: 0;
+    left: 50%;
+    margin-top: 10px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+}
+.arrow_box:after, .arrow_box:before, .arrow:before {
+	bottom: 100%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(213, 201, 141, 0);
+	border-bottom-color: #c55;
+	border-width: 10px;
+	left: 50%;
+	margin-left: -10px;
+}
+
+.arrow_box:before, .arrow:before {  /* border of arrow */
+	border-color: rgba(245, 96, 91, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 16px;
+	left: 50%;
+	margin-left: -16px;
+}
+.arrow:before {
+	border-bottom-color: transparent;
+    border-top-color: #c2e1f5;
+    top: 100%;
+}
