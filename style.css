@@ -27,9 +27,9 @@ div#selector {
 }
 
 input {
-	-webkit-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     font-size: 4.5vw;
-	letter-spacing: 10vw;
+    letter-spacing: 0vw;
     text-align: center;
     border: 1px solid #eee;
     background: #666;
